@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="Airbnb.css">
+</head>
+
+<body>
+
+    <aside id="aside">
+        <a href="">
+            <span>Welcome to Airbnb. Find the best places to stay in the world</span>
+        </a>
+    </aside>
+
+    <header class="headertop" style="height: 725px;">
+        <div id="logo">
+            <div>
+                <a class="flexcenter" href="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/600px-Overwatch_circle_logo.svg.png"
+                        width="40" height="40" />
+                    <span>airbnb</span>
+                </a>
+            </div>
+            <div class="nav-text">
+                <a href="">
+                    <span>Home</span>
+                </a>
+                <a href="">
+                    <span>Locations</span>
+                </a>
+                <a href="">
+                    <span>About Us</span>
+                </a>
+            </div>
+            <div class="text-end">
+                <a href="">
+                    <span>Become a Host</span>
+                </a>
+                <a href="">
+                    <span>
+                        <img src="data:image/png;base64,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"
+                            height="20px" width="20px" alt="" />
+                    </span>
+                </a>
+                <span>
+                    <button id="nav-button">
+                        <img src="/resource/more.svg" height="27px" width="27px" alt="">
+                        <img src="/resource/profile.svg" height="27px" width="27px" alt="">
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="search-input">
+            <div class="">
+                <a href="">
+                    <div>Location</div>
+                    <input type="text" placeholder="Where are you going?">
+                </a>
+            </div>
+            <div class="">
+                <a href="">
+                    <div>Check-in</div>
+                    <input type="datetime" placeholder="Date">
+                </a>
+            </div>
+            <div class="">
+                <a href="">
+                    <div>Check-Out</div>
+                    <input type="datetime" placeholder="Date">
+                </a>
+            </div>
+            <div class="">
+                <a href="">
+                    <div>Guests</div>
+                    <input type="number" placeholder="Ass Guests">
+                </a>
+            </div>
+
+            <button class="search-button">
+                <img src="https://pixlok.com/wp-content/uploads/2021/12/Magnifying-Glagg-Icon-09jdfd.png" height="25px"
+                    width="25px" alt="">
+            </button>
+
+        </div>
+        <div class="preface">
+            <span>Plan Your Trip,<br>Nearby Places</span>
+
+            <button>
+                <b>Explore Locations</b>
+            </button>
+        </div>
+    </header>
+    <section class="padding1">
+        <ul class="items">
+            <a href="">
+                <li>
+                    <img src="/resource/Location-8.png" width="70px" alt="" />
+                    <span>
+                        <b>Khao yai</b><br>
+                        <span>30 Minutes by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Locations-3.png" width="70px" alt="" />
+                    <span>
+                        <b>Chiangrai</b><br>
+                        <span>1 Hour by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Locations-4.png" width="70px" alt="" />
+                    <span>
+                        <b>Samui</b><br>
+                        <span>3.5 Hours by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Locations-1.png" width="70px" alt="" />
+                    <span>
+                        <b>Samet</b><br>
+                        <span>30 Minutes by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Location-7.png" width="70px" alt="" />
+                    <span>
+                        <b>Pathum Thani</b><br>
+                        <span>2 Hours by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Locations-2.png" width="70px" alt="" />
+                    <span>
+                        <b>Pattaya</b><br>
+                        <span>45 Minutes by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Location 5.png" width="70px" alt="" />
+                    <span>
+                        <b>Rayong</b><br>
+                        <span>45 Minutes by Car</span>
+                    </span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Location-6.png" width="70px" alt="" />
+                    <span>
+                        <b>Chiangmai</b> <br>
+                        <span>1 Hours by Car</span>
+                    </span>
+                </li>
+            </a>
+        </ul>
+    </section>
+    <section class="padding2">
+        <div>
+            <b class="font32">Accommodations</b>
+        </div>
+        <ul class="itemsquarter">
+            <a href="">
+                <li>
+                    <img src="/resource/Accomodations - 1.png" width="100%" alt="">
+                    <b class="font18">Houses</b>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Accomodations-3.png" width="100%" alt="">
+                    <b class="font18">Log Cabins & Country Houses</b>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Accomodations-2.png" width="100%" alt="">
+                    <b class="font18">Unique Spaces</b>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Accomodations-4.png" width="100%" alt="">
+                    <b class="font18">Hot Tubs</b>
+                </li>
+            </a>
+        </ul>
+    </section>
+    <section class="black-background">
+        <div>
+            <b class="font32">Unique Experiences and Activities</b>
+            <div class="font14">Meet whit local experts.</div>
+        </div>
+        <ul class="itemsbackground">
+            <a href="">
+                <li>
+                    <img src="/resource/Virtual Experience.png" alt="" width="100%" />
+                    <b class="font18">Virtual Experience</b>
+                    <div class="font14">Traval the World from home</div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Experience.png" alt="" width="100%" />
+                    <b class="font18">Experience</b>
+                    <div class="font14">Experience from Anywhere!</div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Adventure.png" alt="" width="100%" />
+                    <b class="font18">Adventure</b>
+                    <div class="font14">Multi-day trip with accommodations and meals.</div>
+                </li>
+            </a>
+
+        </ul>
+    </section>
+    <section class="community">
+        <div>
+            <b class="font32">Be a part of the millions of Airbnb Host Community.</b>
+        </div>
+        <ul class="itemscommunity">
+            <a href="">
+                <li>
+                    <img src="/resource/Become a Hostel Host .png" alt="" width="100%" />
+                    <b>Become a Hostel Host</b>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Host a Virtual Experience.png" alt="" width="100%" />
+                    <b>Host a Virtual Experience</b>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="/resource/Host Your Experience.png" alt="" width="100%" />
+                    <b>Host your Experience</b>
+                </li>
+            </a>
+        </ul>
+    </section>
+    <footer class="footer">
+        <section>
+            <div class="itemsfooter">
+                <ul>
+                    <b>Introduce</b>
+                    <li>
+                        <a href="">Guide to Use Airbnb</a>
+                    </li>
+                    <li>
+                        <a href="">Newsroom</a>
+                    </li>
+                    <li>
+                        <a href="">Investor Information</a>
+                    </li>
+                    <li>
+                        <a href="">Airbnb plus</a>
+                    </li>
+                    <li>
+                        <a href="">Airbnb Luxe</a>
+                    </li>
+                    <li>
+                        <a href="">Hotel Tonight</a>
+                    </li>
+                    <li>
+                        <a href="">Airbnb Business Program</a>
+                    </li>
+                    <li>
+                        <a href="">Olympic</a>
+                    </li>
+                    <li>
+                        <a href="">Jobs</a>
+                    </li>
+                </ul>
+                <ul>
+                    <b>Community</b>
+                    <li>
+                        <a href="">Diversity</a>
+                    </li>
+                    <li>
+                        <a href="">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="">Airbnb Associate</a>
+                    </li>
+                    <li>
+                        <a href="">Accommodation for Aid Workers</a>
+                    </li>
+                    <li>
+                        <a href="">Invite Friends</a>
+                    </li>
+                    <li>
+                        <a href="">Airbnb.org</a>
+                    </li>
+                </ul>
+                <ul>
+                    <b>To Host</b>
+                    <li>
+                        <a href="">Accommodation Hosting</a>
+                    </li>
+                    <li>
+                        <a href="">Host a Virtual Experience</a>
+                    </li>
+                    <li>
+                        <a href="">Host Your Experience</a>
+                    </li>
+                    <li>
+                        <a href="">Responsible Hosting</a>
+                    </li>
+                    <li>
+                        <a href="">Data Center</a>
+                    </li>
+                    <li>
+                        <a href="">Community Center</a>
+                    </li>
+                </ul>
+                <ul>
+                    <b>Airbnb Support</b>
+                    <li>
+                        <a href="">Airbnb's reponse to COVID-19</a>
+                    </li>
+                    <li>
+                        <a href="">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="">Reservation Cancellation</a>
+                    </li>
+                    <li>
+                        <a href="">Airbnb Neighbor Complaint Support</a>
+                    </li>
+                    <li>
+                        <a href="">Trust and Safety</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr style="height:1px ; border-width:0; background-color: rgba(116, 116, 116, 0.3);">
+        <section class="lastfooter">
+            <div class="lastfooter1">
+                <b>@2021 Airbnb, All rights reserved</b> <br>
+                <span id="privacy">
+                    <a href="">Privacy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Site Map</a>
+                    <a href="">Refund Policy</a>
+                    <a href="">Company Details</a>
+                </span>
+            </div>
+
+
+            <div class="lastfooter2">
+                <a href="">
+                    <img src="/resource/FB.png" width="16px" alt="">
+                    <b>
+                        <u>English(EN)</u>
+                    </b>
+                </a>
+                <a href="">
+                    <img src="/resource/FB.png" width="16px" alt="">
+                    <b>
+                        <u>THB</u>
+                    </b>
+                </a>
+            </div>
+
+
+            <div class="lastfooter3">
+                <a href="">
+                    <img src="/resource/FB.png" width="16px" alt="">
+                </a>
+                <a href="">
+                    <img src="/resource/twitter.png" width="16px" alt="">
+                </a>
+                <a href="">
+                    <img src="/resource/images.png" width="16px" alt="">
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
